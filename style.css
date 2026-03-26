@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  background: radial-gradient(circle, #ff9933, #ffffff, #138808);
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ram-img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px gold;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px gold;
+  }
+
+  to {
+    box-shadow: 0 0 40px orange;
+  }
+}
+
+.title {
+  font-size: 40px;
+  color: #ff6600;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.message {
+  font-size: 18px;
+  margin-top: 10px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Falling Flowers 🌸 */
+.overlay span {
+  position: absolute;
+  top: -10px;
+  font-size: 20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
