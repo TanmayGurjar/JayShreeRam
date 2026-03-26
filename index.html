@@ -5,20 +5,22 @@
     <title>Jai Shree Ram</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="overlay"></div>
+  <body onclick="enableAudio()">
+    <canvas id="particles"></canvas>
 
     <div class="container">
-      <img src="ram.jpg" class="ram-img" />
+      <div class="card">
+        <img src="ram.jpg" class="ram-img" />
 
-      <h1 class="title">🙏 Jai Shree Ram 🙏</h1>
+        <h1 id="typewriter"></h1>
 
-      <p class="message">Wishing you and your family a blessed Ram Navami 🌸</p>
+        <p id="teamMessage"></p>
 
-      <button onclick="playAudio()">🔊 Play Bhajan</button>
+        <button onclick="playAudio()">🎧 Experience Sound</button>
+      </div>
     </div>
 
-    <audio id="audio" src="ram.mp3"></audio>
+    <audio id="audio" src="ram1.mp3" loop></audio>
 
     <script src="script.js"></script>
   </body>
